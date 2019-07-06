@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
+@section('css')
+<link href="{{ asset('css/register.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
-<div class="container">
+<div class="container register-container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -63,7 +67,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-register">
                                     {{ __('Register') }}
                                 </button>
                             </div>

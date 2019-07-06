@@ -1,0 +1,15 @@
+@import 'variables';
+
+.login-container {
+  height: 68vh;
+
+  .card, .forgot-pass-link {
+    color: $dark_blue_green;
+  }
+
+  .btn-login {
+    background-color: $dark_blue_green;
+    outline-color: $dark_blue_green;
+    color: white;
+  }
+}

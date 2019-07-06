@@ -1,8 +1,10 @@
+@import 'variables';
+
 .container-fluid {
   font-family: 'Satisfy', cursive;
   
   h1 {
-    color: #2D6079;
+    color: $dark_blue_green;
     font-weight: 600;
   }
 }

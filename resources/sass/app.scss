@@ -3,7 +3,7 @@
 
 .navbar-laravel {
   font-family: 'Sniglet', cursive;
-  background-color: #2D6079;
+  background-color: $dark_blue_green;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 
   .navbar-brand {
@@ -12,7 +12,7 @@
 }
 
 footer {
-  background-color: #2D6079;
+  background-color: $dark_blue_green;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }

@@ -1,0 +1,12 @@
+@import 'variables';
+
+.register-container {
+  color: $dark_blue_green;
+  height: 68vh;
+}
+
+.btn-register {
+  color: white;
+  background-color: $dark_blue_green;
+  outline-color: $dark_blue_green;
+}
