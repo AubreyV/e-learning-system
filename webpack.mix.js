@@ -19,3 +19,5 @@ mix.sass('resources/sass/welcome.scss', 'public/css');
 mix.sass('resources/sass/login.scss', 'public/css');
 
 mix.sass('resources/sass/register.scss', 'public/css');
+
+mix.sass('resources/sass/home.scss', 'public/css');
