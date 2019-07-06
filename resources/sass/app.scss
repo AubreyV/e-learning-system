@@ -1,11 +1,18 @@
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
 .navbar-laravel {
-  background-color: #fff;
+  font-family: 'Sniglet', cursive;
+  background-color: #2D6079;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  background-color: #2D6079;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
