@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.create-category-container {
+  color: $dark_blue_green;
+
+  .row {
+    div {
+      &:nth-child(2) {
+        a {
+          color: $non_bright_red;
+        }
+      }
+    }
+  }
+  
+  .create-category-form {
+    .btn-save-category {
+      background-color: $apple_green;
+      color: white;
+      outline-color: $apple_green;
+
+      &:hover {
+        color: $apple_green;
+        background-color: white;
+        border-color: $apple_green;
+      }
+    }
+  }
+}

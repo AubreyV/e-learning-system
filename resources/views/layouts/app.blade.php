@@ -72,6 +72,12 @@
                                         {{ __('Logout') }}
                                     </a>
 
+                                    <div class="dropdown-divider"></div>
+
+                                    @if (Auth::user()->is_admin)
+                                        <a href="{{ route('admin.categories') }}" class="dropdown-item">Manage Categories</a>
+                                    @endif
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>

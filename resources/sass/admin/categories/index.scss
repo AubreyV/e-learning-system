@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.btn-create-category {
+  background-color: $apple_green;
+  color: white;
+  outline-color: $apple_green;
+
+  &:hover {
+    color: $apple_green;
+    background-color: white;
+    border-color: $apple_green;
+  }
+}
+
+table {
+  color: $dark_blue_green !important;
+
+  th {
+    &:nth-child(3), &:nth-child(1) {
+      width: 20%;
+    }
+  }
+}
