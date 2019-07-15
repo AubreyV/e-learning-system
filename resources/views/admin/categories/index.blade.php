@@ -17,11 +17,17 @@
         </thead>
 
         <tbody>
+            @foreach($categories as $category)
             <tr>
-                <td>Static title</td>
-                <td>Static description</td>
-                <td>Static option</td>
+                <td>{{ $category->title }}</td>
+                <td>{{ $category->description }}</td>
+                <td>
+                    <button class="btn btn-add"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button class="btn btn-delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </td>
             </tr>
+            @endforeach
         </tbody>
     </table>
 </div>

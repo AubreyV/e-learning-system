@@ -20,4 +20,41 @@ table {
       width: 20%;
     }
   }
+  
+  tr {
+    td {
+      vertical-align: middle !important;
+
+      a {
+        color: $apple_green;
+
+        &:hover {
+          color: $apple_green;
+          opacity: 0.7;
+        }
+      }
+
+      &:last-child {
+        .btn {
+          color: white;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .btn-add {
+          background-color: $ash_blue_green;
+        }
+
+        .btn-edit {
+          background-color: $non_bright_yellow;
+        }
+
+        .btn-delete {
+          background-color: $non_bright_red;
+        }
+      }
+    }
+  }
 }
