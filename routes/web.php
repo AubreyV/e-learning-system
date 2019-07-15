@@ -23,4 +23,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.categories'], function() {
     Route::get('/categories', 'CategoryController@index')->name('');
     Route::get('/categories/create', 'CategoryController@create')->name('.create');
+    Route::post('/categories', 'CategoryController@store')->name('.store');
 });

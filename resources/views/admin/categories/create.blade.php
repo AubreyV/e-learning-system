@@ -16,7 +16,8 @@
             </a>
         </div>
     </div>
-    <form class="create-category-form mt-3">
+    <form action="{{ route('admin.categories.store') }}" method="POST" class="create-category-form mt-3">
+        @csrf
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control" id="title" name="title">

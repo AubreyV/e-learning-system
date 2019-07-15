@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Category;
 
 class CategoryController extends Controller
 {
@@ -36,7 +37,16 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        /**
+         * $request->except('_token') => get all requests except _token
+         * 
+         * create($request->except('_token') automatically maps the name
+         * of the $request sent to the name of the attributes of categories
+         * table and save the corresponding value
+         */
+        Category::create($request->except('_token'));
+
+        return redirect()->route('admin.categories');
     }
 
     /**
