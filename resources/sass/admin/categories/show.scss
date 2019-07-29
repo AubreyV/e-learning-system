@@ -1,0 +1,52 @@
+@import '../../variables';
+
+.container {
+  .card {
+    color: $dark_blue_green;
+
+    .card-header {
+      .category-title {
+        span {
+          vertical-align: -webkit-baseline-middle;
+          font-size: 1.5em;
+          font-weight: 600;
+        }
+      }
+    
+      .add-word {
+        .btn-add-word {
+          background-color: $apple_green;
+          color: white;
+        }
+      }
+    }
+
+    .card-body {
+      .blockquote-footer {
+        font-size: 1em;
+      }
+    }
+
+    .table {
+      color: $dark_blue_green;
+
+      td {
+        .btn {
+          color: white;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        .btn-edit {
+          background-color: $non_bright_yellow;
+        }
+
+        .btn-delete {
+          background-color: $non_bright_red;
+        }
+      }
+    }
+  }
+}

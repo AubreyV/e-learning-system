@@ -22,7 +22,9 @@
                 <td>{{ $category->title }}</td>
                 <td>{{ $category->description }}</td>
                 <td>
-                    <button class="btn btn-add"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <a class="btn btn-add" href="{{ route('admin.categories.show', compact('category')) }}">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </a>
                     <button class="btn btn-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
                     <button class="btn btn-delete"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </td>
