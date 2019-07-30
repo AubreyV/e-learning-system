@@ -13,7 +13,7 @@
                     <span>Category #{{ $category->id }}: {{ $category->title }}</span>
                 </div>
                 <div class="col-6 text-right add-word">
-                    <a href="#" class="btn btn-add-word"><i class="fa fa-plus-square"></i> word</a>
+                    <a href="{{ route('admin.categories.words.create', compact('category')) }}" class="btn btn-add-word"><i class="fa fa-plus-square"></i> word</a>
                 </div>
             </div>
         </div>

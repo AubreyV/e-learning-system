@@ -25,3 +25,5 @@ mix.sass('resources/sass/home.scss', 'public/css');
 mix.sass('resources/sass/admin/categories/index.scss', 'public/css/admin/categories');
 mix.sass('resources/sass/admin/categories/create.scss', 'public/css/admin/categories');
 mix.sass('resources/sass/admin/categories/show.scss', 'public/css/admin/categories');
+
+mix.sass('resources/sass/admin/words/create.scss', 'public/css/admin/words');

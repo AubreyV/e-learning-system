@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Word extends Model
 {
     /**
      * Inside $guarded should be attributes that aren't mass assignable.
@@ -13,8 +13,13 @@ class Category extends Model
      */
     protected $guarded = [];
 
-    public function words()
+    public function category()
     {
-        return $this->hasMany(Word::class);
+        return $this->belongsTo(Category::class);
+    }
+
+    public function answers()
+    {
+        return $this->hasMany(Answer::class);
     }
 }

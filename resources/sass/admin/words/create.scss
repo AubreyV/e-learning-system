@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.word-create-container {
+  color: $dark_blue_green;
+
+  .card {
+    .card-header {
+      .row {
+        div {
+          &:nth-child(2) {
+            a {
+              color: $non_bright_red;
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      form {
+        div {
+          &:last-child {
+            .btn-save-word {
+              background-color: $apple_green;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
